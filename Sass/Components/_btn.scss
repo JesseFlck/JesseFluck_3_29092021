@@ -1,0 +1,40 @@
+.btn
+{
+    background: linear-gradient(to bottom right, $gradient1, $gradient2);
+    width: 50%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+}
+
+
+
+.btnnv
+{
+    position: absolute;
+    background-color: $btnnv;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    right: 10px;
+    top: 15px;
+    border-radius: 2px;
+    font-weight: bold;
+    color: #008766;
+    font-size: 14px;
+}
+
+
+
+.bouton
+{
+    padding-bottom: 50px;
+}

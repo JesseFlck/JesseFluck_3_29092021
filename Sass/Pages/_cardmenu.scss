@@ -1,0 +1,56 @@
+.cardmenu
+{
+    background-color: #fff;
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(66, 23, 23, 0.2);
+}
+
+.cardmenu:hover
+{
+    cursor: pointer;
+}
+
+.cardmenu h3
+{
+    font-size: 17px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-block-start: 10px;
+}
+
+.cardmenu p
+{
+    font-size: 14px;
+    margin-block-start: 0;
+    padding-top: 10px;
+}
+
+
+.cardmenu p, h3
+{
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.cardmenu h3:last-child
+{
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+
+.descricardmenu
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+

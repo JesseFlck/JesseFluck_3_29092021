@@ -1,0 +1,39 @@
+/* header index */
+
+
+.headeraccueil
+{
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Shrikhand';
+    font-size: 30px;
+}
+
+
+/* header menus */
+
+
+.headermenu
+{
+    padding-top: 15px;
+    font-family: 'Shrikhand';
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.headermenu p
+{
+    text-align: center;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    margin: auto;
+}
+
+.headermenu img
+{
+    padding-left: 17px;
+    position: absolute;
+    top: 25px;
+}

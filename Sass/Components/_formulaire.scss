@@ -1,0 +1,43 @@
+/* Formulaire */
+
+
+input
+{
+    background-color: #EAEAEA;
+    border: 1px solid #EAEAEA;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+.formulaire
+{
+    background-color: $background;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+
+
+
+.contenuform
+{
+    padding-top: 30px;
+
+    h1{
+        width: 80%;
+        margin: auto;
+        padding-left: 0;
+    }
+
+    p{
+        width: 95%;
+        margin: auto;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }
+}
