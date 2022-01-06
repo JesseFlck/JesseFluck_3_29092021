@@ -1,0 +1,44 @@
+.heart
+    {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid rgba(0,0,0,0);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid rgba(0,0,0,0);
+        top: 37px;
+        transform: rotate(45deg);
+        right: 17px;
+
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(to bottom right, $gradient1, $gradient2);
+        }
+    }
+
+.heart::before
+    {
+        position: absolute;
+        bottom: -1px;
+        left: -9px;
+        width: 10px; 
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid black;
+        border-right: 1px solid rgba(0,0,0,0);
+        content: "";
+    } 
+
+.heart::after
+    {
+        position: absolute;
+        top: -9px;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        content: "";
+        border-radius: 50%;
+        border: 1px solid black;
+        border-bottom: 1px solid rgba(0,0,0,0);
+    } 

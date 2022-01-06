@@ -115,6 +115,47 @@ input {
   padding-bottom: 30px;
 }
 
+.heart {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid rgba(0, 0, 0, 0);
+  top: 37px;
+  transform: rotate(45deg);
+  right: 17px;
+}
+.heart:hover {
+  cursor: pointer;
+  background: linear-gradient(to bottom right, #EC73DA, #9356DC);
+}
+
+.heart::before {
+  position: absolute;
+  bottom: -1px;
+  left: -9px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid black;
+  border-right: 1px solid rgba(0, 0, 0, 0);
+  content: "";
+}
+
+.heart::after {
+  position: absolute;
+  top: -9px;
+  right: -1px;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-radius: 50%;
+  border: 1px solid black;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
 /* header index */
 .headeraccueil {
   text-align: center;
@@ -285,7 +326,6 @@ footer li img {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(66, 23, 23, 0.2);
 }
-
 .cardmenu:hover {
   cursor: pointer;
 }
