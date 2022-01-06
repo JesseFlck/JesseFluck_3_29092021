@@ -7,6 +7,14 @@
   font-family: "Shrikhand";
   src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
 }
+h1 {
+  padding-left: 4%;
+}
+
+h2 {
+  font-size: 20px;
+}
+
 body {
   margin: auto;
   width: 375px;
@@ -17,20 +25,32 @@ img {
   object-fit: cover;
 }
 
-h1 {
-  padding-left: 4%;
+.btn {
+  background: linear-gradient(to bottom right, #EC73DA, #9356DC);
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+.btn a {
+  color: #fff;
+  text-decoration: none;
 }
 
-h2 {
-  font-size: 20px;
-}
-
-/* header */
-header {
-  text-align: center;
-  padding-top: 20px;
-  font-family: "Shrikhand";
-  font-size: 30px;
+.btnnv {
+  position: absolute;
+  background-color: #99E2D0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  right: 10px;
+  top: 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #008766;
+  font-size: 14px;
 }
 
 /* Formulaire */
@@ -66,17 +86,37 @@ input {
   padding-bottom: 30px;
 }
 
-.btn {
-  background: linear-gradient(to bottom right, #EC73DA, #9356DC);
-  width: 50%;
-  margin: auto;
-  padding: 15px;
-  border-radius: 50px;
-  margin-bottom: 30px;
+/* header */
+.headeraccueil {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Shrikhand";
+  font-size: 30px;
 }
-.btn a {
+
+/* footer */
+footer {
+  background-color: #353535;
   color: #fff;
-  text-decoration: none;
+  padding-left: 7%;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+footer ul {
+  padding-left: unset;
+}
+footer li {
+  list-style-type: none;
+  padding-bottom: 8px;
+}
+footer li img {
+  margin-right: 5px;
+}
+
+.logofooter {
+  color: #fff;
+  font-family: "Shrikhand";
+  font-size: 18px;
 }
 
 /* Fonctionnement */
@@ -163,46 +203,6 @@ input {
 .card a {
   text-decoration: none;
   color: #000;
-}
-
-.btnnv {
-  position: absolute;
-  background-color: #99E2D0;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  right: 10px;
-  top: 15px;
-  border-radius: 2px;
-  font-weight: bold;
-  color: #008766;
-  font-size: 14px;
-}
-
-/* footer */
-footer {
-  background-color: #353535;
-  color: #fff;
-  padding-left: 7%;
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
-footer ul {
-  padding-left: unset;
-}
-footer li {
-  list-style-type: none;
-  padding-bottom: 8px;
-}
-footer li img {
-  margin-right: 5px;
-}
-
-.logofooter {
-  color: #fff;
-  font-family: "Shrikhand";
-  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
