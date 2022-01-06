@@ -9,11 +9,22 @@
     flex-direction: column;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(66, 23, 23, 0.2);
+    position: relative;
 
     &:hover{
         cursor: pointer;
     }
 }
+
+.hovermenu
+    {
+        background-color: rgba(153, 226, 208, 1);
+        border-radius: 0 15px 15px 0;
+        height: 71px;
+        width: 20%;
+        position:absolute;
+        right: 0;
+    }
 
 
 
