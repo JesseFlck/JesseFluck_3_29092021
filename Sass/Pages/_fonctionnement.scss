@@ -8,6 +8,21 @@
 }
 
 
+.fctcardglobal
+{
+    @media screen and (min-width: 500px){
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 992px){
+        width: 80%;
+        margin:auto;
+    }
+}
+
+
 .fctcard
 {
     background-color: $background;
@@ -25,6 +40,12 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    @media screen and (min-width: 500px)
+    {
+        width: 30%;
+        min-width: 260px;
+    }
 
     p{
         position: absolute;

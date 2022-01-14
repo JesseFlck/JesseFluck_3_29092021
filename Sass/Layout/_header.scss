@@ -7,6 +7,10 @@
     padding-top: 20px;
     font-family: 'Shrikhand';
     font-size: 30px;
+
+    @media screen and (min-width: 500px){
+        font-size: 36px;
+    }
 }
 
 
@@ -21,6 +25,10 @@
     display: flex;
     align-items: center;
     padding-bottom: 10px;
+
+    @media screen and (min-width: 500px){
+        font-size: 36px;
+    }
 }
 
 .headermenu p
