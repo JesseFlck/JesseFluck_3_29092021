@@ -40,6 +40,12 @@
     display: flex;
     align-items: center;
     position: relative;
+    transform: scale (1);
+    transition: transform 400ms;
+    &:hover{
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px 0 rgba(236, 115, 218, 0.7);
+    }
 
     @media screen and (min-width: 500px)
     {
