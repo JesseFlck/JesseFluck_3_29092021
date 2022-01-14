@@ -1,3 +1,27 @@
+.cardmenuglobal
+{
+    @media screen and (min-width: 500px)
+    {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 992px)
+    {
+        margin: auto;
+        width: 90%;
+    }
+
+    p, h3:first-child
+    {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+
 .cardmenu
 {
     background-color: #fff;
@@ -9,6 +33,16 @@
     flex-direction: column;
     border-radius: 15px;
     box-shadow: 0 4px 8px 0 rgba(66, 23, 23, 0.2);
+
+    @media screen and (min-width: 500px)
+    {
+        width: 40%;
+        min-width: 300px;
+    }
+
+    @media screen and (min-width: 992px){
+        width: 25%;
+    }
 
     &:hover{
         cursor: pointer;
