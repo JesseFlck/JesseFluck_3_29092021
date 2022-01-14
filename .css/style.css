@@ -33,6 +33,16 @@ body {
   width: 375px;
   font-family: "Roboto", Arial, serif;
 }
+@media screen and (min-width: 500px) {
+  body {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  body {
+    width: 100%;
+  }
+}
 
 img {
   object-fit: cover;
@@ -61,6 +71,16 @@ img {
 .btn a {
   color: #fff;
   text-decoration: none;
+}
+@media screen and (min-width: 500px) {
+  .btn {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn {
+    width: 20%;
+  }
 }
 
 .btnnv {
@@ -163,6 +183,11 @@ input {
   font-family: "Shrikhand";
   font-size: 30px;
 }
+@media screen and (min-width: 500px) {
+  .headeraccueil {
+    font-size: 36px;
+  }
+}
 
 /* header menus */
 .headermenu {
@@ -172,6 +197,11 @@ input {
   display: flex;
   align-items: center;
   padding-bottom: 10px;
+}
+@media screen and (min-width: 500px) {
+  .headermenu {
+    font-size: 36px;
+  }
 }
 
 .headermenu p {
@@ -198,9 +228,29 @@ footer {
 footer ul {
   padding-left: unset;
 }
+@media screen and (min-width: 500px) {
+  footer ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-around;
+  }
+}
+@media screen and (min-width: 992px) {
+  footer ul {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+  }
+}
 footer li {
   list-style-type: none;
   padding-bottom: 8px;
+}
+@media screen and (min-width: 992px) {
+  footer li {
+    margin: auto;
+  }
 }
 footer li img {
   margin-right: 5px;
@@ -211,11 +261,36 @@ footer li img {
   font-family: "Shrikhand";
   font-size: 18px;
 }
+@media screen and (min-width: 500px) {
+  .logofooter {
+    text-align: center;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .logofooter {
+    text-align: left;
+  }
+}
 
 /* Fonctionnement */
 .fonctionnement {
   padding-bottom: 40px;
   padding-top: 40px;
+}
+
+@media screen and (min-width: 500px) {
+  .fctcardglobal {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .fctcardglobal {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 .fctcard {
@@ -234,6 +309,12 @@ footer li img {
   display: flex;
   align-items: center;
   position: relative;
+}
+@media screen and (min-width: 500px) {
+  .fctcard {
+    width: 30%;
+    min-width: 260px;
+  }
 }
 .fctcard p {
   position: absolute;
@@ -293,9 +374,35 @@ footer li img {
   background-color: #fff;
   position: relative;
 }
+@media screen and (min-width: 500px) {
+  .cardresto {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cardresto {
+    width: 20%;
+  }
+}
 .cardresto a {
   text-decoration: none;
   color: #000;
+}
+
+@media screen and (min-width: 500px) {
+  .cardrestoglobal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 992px) {
+  .cardrestoglobal {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }
 
 /* bannière */
