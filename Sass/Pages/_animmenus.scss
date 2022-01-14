@@ -1,0 +1,21 @@
+.cardmenu{
+    animation: slidemenu ease 600ms 1 normal both;
+    @for $i from 1 through 4{
+        &--#{$i} {
+            animation-delay: 200ms*$i;
+        }
+    }
+}
+
+
+@keyframes slidemenu
+{
+    0%{
+        opacity: 0;
+        transform: translateY(-20);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
