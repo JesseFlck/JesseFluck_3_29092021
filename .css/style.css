@@ -158,45 +158,84 @@ input {
   padding-bottom: 30px;
 }
 
-.heart {
-  position: relative;
-  width: 10px;
-  height: 10px;
-  border-top: 1px solid rgba(0, 0, 0, 0);
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  border-left: 1px solid rgba(0, 0, 0, 0);
-  top: 37px;
-  transform: rotate(45deg);
-  right: 17px;
-}
-.heart:hover {
-  cursor: pointer;
-  background: linear-gradient(to bottom right, #EC73DA, #9356DC);
-}
+/*.heart
+    {
+        position: relative;
+        width: 10px;
+        height: 10px;
+        border-top: 1px solid rgba(0,0,0,0);
+        border-right: 1px solid black;
+        border-bottom: 1px solid black;
+        border-left: 1px solid rgba(0,0,0,0);
+        top: 37px;
+        transform: rotate(45deg);
+        right: 17px;
 
-.heart::before {
-  position: absolute;
-  bottom: -1px;
-  left: -9px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: 1px solid black;
-  border-right: 1px solid rgba(0, 0, 0, 0);
-  content: "";
+        &:hover{
+            cursor: pointer;
+            background: linear-gradient(to bottom right, $gradient1, $gradient2);
+        }
+    }
+
+.heart::before
+    {
+        position: absolute;
+        bottom: -1px;
+        left: -9px;
+        width: 10px; 
+        height: 10px;
+        border-radius: 50%;
+        border: 1px solid black;
+        border-right: 1px solid rgba(0,0,0,0);
+        content: "";
+    } 
+
+.heart::after
+    {
+        position: absolute;
+        top: -9px;
+        right: -1px;
+        width: 10px;
+        height: 10px;
+        content: "";
+        border-radius: 50%;
+        border: 1px solid black;
+        border-bottom: 1px solid rgba(0,0,0,0);
+    } */
+.contenubann {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .heart::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+  content: "\f004";
+  font-size: 25px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+
+.heart:hover::after {
+  cursor: pointer;
+  transform: scale(1.2);
+  font-weight: 400;
+  /*-webkit-background-clip: text;*/
+  -webkit-text-fill-color: transparent;
+  background: -webkit-linear-gradient(#EC73DA, #9356DC);
+  display: inline-block;
+}
+
+.cardresto .heart {
   position: absolute;
-  top: -9px;
-  right: -1px;
-  width: 10px;
-  height: 10px;
-  content: "";
-  border-radius: 50%;
-  border: 1px solid black;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  right: 20px;
+  bottom: 25px;
 }
 
 /* header index */
@@ -482,6 +521,8 @@ footer li img {
   background-color: #fff;
   width: 90%;
   height: 70px;
+  overflow: hidden;
+  position: relative;
   margin: auto;
   margin-bottom: 20px;
   display: flex;
@@ -535,6 +576,7 @@ footer li img {
   margin-block-end: 0;
 }
 
+/* apparition menus */
 .cardmenu {
   animation: slidemenu ease 600ms 1 normal both;
 }
@@ -561,6 +603,85 @@ footer li img {
     transform: translateY(0);
   }
 }
+/* slide checkbox */
+.contenumenu {
+  width: 100%;
+  transition: width 600ms;
+}
+
+.checkbox {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #99E2D0;
+  font-size: 1.5rem;
+  color: #fff;
+  transform: translateX(100%);
+  transition: transform 0.5s ease-in-out;
+  border-radius: 0 15px 15px 0;
+}
+.checkbox::after {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f058";
+  margin: auto;
+  transition: transform 400ms;
+  transition-delay: 100ms;
+}
+
+.cardmenu:hover .contenumenu {
+  width: 80%;
+}
+.cardmenu:hover .checkbox {
+  animation: check ease 600ms 1 normal both;
+}
+.cardmenu:hover .checkbox::after {
+  transform: rotate(360deg);
+}
+
+@keyframes check {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/*i
+    {
+        transform: rotate(45deg);
+        margin: auto;
+        transition: transform 0.5 ease-in-out;
+    }
+
+    .fas
+    {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        line-height: 1;
+    }
+}*/
+/*.fa-check-circle::before
+{
+    content:"\f058";
+}*/
+/*.cardmenu
+{
+    transition: width 500ms ease-in-out 0ms;
+    &:hover .checkbox::after{
+        transform: rotate(360deg);
+    }
+}*/
 .lds-roller {
   display: inline-block;
   position: relative;

@@ -1,4 +1,4 @@
-.heart
+/*.heart
     {
         position: relative;
         width: 10px;
@@ -41,4 +41,45 @@
         border-radius: 50%;
         border: 1px solid black;
         border-bottom: 1px solid rgba(0,0,0,0);
-    } 
+    } */
+
+
+.contenubann
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heart::after
+{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f004";
+    font-size: 25px;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.heart:hover::after{
+        cursor: pointer;
+        transform: scale(1.2);
+        font-weight: 400;
+        /*-webkit-background-clip: text;*/
+        -webkit-text-fill-color: transparent;
+        background: -webkit-linear-gradient($gradient1, $gradient2);
+        display: inline-block;
+}
+
+
+.cardresto .heart
+{
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+}
