@@ -82,3 +82,26 @@
       transform: rotate(360deg);
     }
   }
+
+
+.loader{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  visibility: hidden;
+  animation: fond 3s both;
+  background: $background;
+}
+
+@keyframes fond {
+  0%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+}

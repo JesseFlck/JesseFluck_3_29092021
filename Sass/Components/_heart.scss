@@ -69,11 +69,11 @@
 .heart:hover::after{
         cursor: pointer;
         transform: scale(1.2);
-        font-weight: 400;
-        /*-webkit-background-clip: text;*/
+        font-weight: 900;
         -webkit-text-fill-color: transparent;
         background: -webkit-linear-gradient($gradient1, $gradient2);
         display: inline-block;
+        -webkit-background-clip: text;
 }
 
 

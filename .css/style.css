@@ -235,11 +235,11 @@ input::before {
 .heart:hover::after {
   cursor: pointer;
   transform: scale(1.2);
-  font-weight: 400;
-  /*-webkit-background-clip: text;*/
+  font-weight: 900;
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#EC73DA, #9356DC);
   display: inline-block;
+  -webkit-background-clip: text;
 }
 
 .cardresto .heart {
@@ -805,6 +805,27 @@ footer li a {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+.loader {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 999;
+  visibility: hidden;
+  animation: fond 3s both;
+  background: #f6f6f6;
+}
+
+@keyframes fond {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
   }
 }
 
