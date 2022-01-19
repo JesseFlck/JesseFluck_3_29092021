@@ -136,6 +136,16 @@ input {
   font-weight: bold;
   font-size: 15px;
 }
+input::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f3c5";
+}
 
 .formulaire {
   background-color: #f6f6f6;
@@ -241,7 +251,7 @@ input {
 /* header index */
 .headeraccueil {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   font-family: "Shrikhand";
   font-size: 30px;
 }
@@ -273,10 +283,18 @@ input {
   margin: auto;
 }
 
-.headermenu img {
+.headermenu i {
   padding-left: 17px;
   position: absolute;
   top: 25px;
+  font-size: 30px;
+  color: #000;
+  transform: scale(1);
+  transition: transform 300ms;
+}
+.headermenu i:hover {
+  transform: scale(1.2);
+  color: #9356DC;
 }
 
 /* footer */
@@ -316,6 +334,10 @@ footer li {
 }
 footer li img {
   margin-right: 5px;
+}
+footer li a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .logofooter {
