@@ -11,8 +11,10 @@
     transition: transform 300ms;
     &:hover{
         transform: scale(1.01);
-        background: linear-gradient(to bottom right, $btnnv, $gradient2);
+        background: linear-gradient(to bottom right, lighten($gradient1, 10%), lighten($gradient2, 10%));
         box-shadow: 0 4px 8px 0 rgba(236, 115, 218, 0.7);
+        font-weight: bold;
+        cursor: pointer;
     }
 
     a{

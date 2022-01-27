@@ -33,6 +33,11 @@
     margin-left: 9%;
   }
 }
+@media screen and (min-width: 992px) {
+  .h2menu {
+    margin-right: 70%;
+  }
+}
 
 body {
   margin: auto;
@@ -85,8 +90,10 @@ img {
 }
 .btn:hover {
   transform: scale(1.01);
-  background: linear-gradient(to bottom right, #99E2D0, #9356DC);
+  background: linear-gradient(to bottom right, #f2a0e6, #ae80e5);
   box-shadow: 0 4px 8px 0 rgba(236, 115, 218, 0.7);
+  font-weight: bold;
+  cursor: pointer;
 }
 .btn a {
   color: #fff;
@@ -129,14 +136,23 @@ img {
 input {
   background-color: #EAEAEA;
   border: 1px solid #EAEAEA;
-  width: 100%;
+  border: 1px 0 0 0 #353535;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
   font-weight: bold;
   font-size: 15px;
+  background-color: transparent;
 }
-input::before {
+
+.formloca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  box-shadow: inset 0 0.125rem 0.25rem -0.1875rem #353535;
+  background-color: #eaeaea;
+}
+
+label::before {
   display: inline-block;
   font-style: normal;
   font-variant: normal;
@@ -168,50 +184,6 @@ input::before {
   padding-bottom: 30px;
 }
 
-/*.heart
-    {
-        position: relative;
-        width: 10px;
-        height: 10px;
-        border-top: 1px solid rgba(0,0,0,0);
-        border-right: 1px solid black;
-        border-bottom: 1px solid black;
-        border-left: 1px solid rgba(0,0,0,0);
-        top: 37px;
-        transform: rotate(45deg);
-        right: 17px;
-
-        &:hover{
-            cursor: pointer;
-            background: linear-gradient(to bottom right, $gradient1, $gradient2);
-        }
-    }
-
-.heart::before
-    {
-        position: absolute;
-        bottom: -1px;
-        left: -9px;
-        width: 10px; 
-        height: 10px;
-        border-radius: 50%;
-        border: 1px solid black;
-        border-right: 1px solid rgba(0,0,0,0);
-        content: "";
-    } 
-
-.heart::after
-    {
-        position: absolute;
-        top: -9px;
-        right: -1px;
-        width: 10px;
-        height: 10px;
-        content: "";
-        border-radius: 50%;
-        border: 1px solid black;
-        border-bottom: 1px solid rgba(0,0,0,0);
-    } */
 .contenubann {
   display: flex;
   align-items: center;
@@ -239,9 +211,25 @@ input::before {
   -webkit-text-fill-color: transparent;
   background: -webkit-linear-gradient(#EC73DA, #9356DC);
   display: inline-block;
+  animation: opacity 500ms;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .cardresto .heart {
   position: absolute;
   right: 20px;
@@ -252,6 +240,7 @@ input::before {
 .headeraccueil {
   text-align: center;
   padding-top: 15px;
+  padding-bottom: 10px;
   font-family: "Shrikhand";
   font-size: 30px;
 }
@@ -259,6 +248,12 @@ input::before {
   .headeraccueil {
     font-size: 36px;
   }
+}
+.headeraccueil p {
+  text-align: center;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: auto;
 }
 
 /* header menus */
@@ -305,6 +300,11 @@ footer {
   padding-top: 30px;
   padding-bottom: 20px;
 }
+@media screen and (min-width: 992px) {
+  footer {
+    padding-left: 3%;
+  }
+}
 footer ul {
   padding-left: unset;
 }
@@ -332,8 +332,12 @@ footer li {
     margin: auto;
   }
 }
-footer li img {
+footer li i {
   margin-right: 5px;
+  font-size: 12px;
+}
+footer li .fa-utensils {
+  margin-right: 9px;
 }
 footer li a {
   text-decoration: none;
@@ -363,6 +367,16 @@ footer li a {
   padding-top: 40px;
 }
 
+.fctcardglobal i {
+  font-size: 20px;
+  width: auto;
+  padding-left: 30px;
+  padding-right: 15px;
+  color: #7E7E7E;
+}
+.fctcardglobal .fa-store {
+  color: #9356DC;
+}
 @media screen and (min-width: 500px) {
   .fctcardglobal {
     display: flex;
@@ -411,12 +425,6 @@ footer li a {
   left: 22%;
   font-weight: bold;
   font-size: 15px;
-}
-.fctcard img {
-  height: 20px;
-  width: auto;
-  padding-left: 30px;
-  padding-right: 15px;
 }
 
 .chiffre {
@@ -531,12 +539,24 @@ footer li a {
   .cardmenuglobal {
     margin: auto;
     width: 90%;
+    display: flex;
+    flex-direction: column;
   }
 }
 .cardmenuglobal p, .cardmenuglobal h3:first-child {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+
+@media screen and (min-width: 992px) {
+  .menusglobal {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
 }
 
 .cardmenu {
@@ -677,136 +697,6 @@ footer li a {
     transform: translateX(0);
   }
 }
-/*i
-    {
-        transform: rotate(45deg);
-        margin: auto;
-        transition: transform 0.5 ease-in-out;
-    }
-
-    .fas
-    {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        line-height: 1;
-    }
-}*/
-/*.fa-check-circle::before
-{
-    content:"\f058";
-}*/
-/*.cardmenu
-{
-    transition: width 500ms ease-in-out 0ms;
-    &:hover .checkbox::after{
-        transform: rotate(360deg);
-    }
-}*/
-.lds-roller {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-
-.lds-roller div {
-  animation: lds-roller 3s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-  transform-origin: 40px 40px;
-}
-
-.lds-roller div:after {
-  content: " ";
-  display: block;
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom right, #EC73DA, #9356DC, #99E2D0);
-  margin: -4px 0 0 -4px;
-}
-
-.lds-roller div:nth-child(1) {
-  animation-delay: -0.036s;
-}
-
-.lds-roller div:nth-child(1):after {
-  top: 63px;
-  left: 63px;
-}
-
-.lds-roller div:nth-child(2) {
-  animation-delay: -0.072s;
-}
-
-.lds-roller div:nth-child(2):after {
-  top: 68px;
-  left: 56px;
-}
-
-.lds-roller div:nth-child(3) {
-  animation-delay: -0.108s;
-}
-
-.lds-roller div:nth-child(3):after {
-  top: 71px;
-  left: 48px;
-}
-
-.lds-roller div:nth-child(4) {
-  animation-delay: -0.144s;
-}
-
-.lds-roller div:nth-child(4):after {
-  top: 72px;
-  left: 40px;
-}
-
-.lds-roller div:nth-child(5) {
-  animation-delay: -0.18s;
-}
-
-.lds-roller div:nth-child(5):after {
-  top: 71px;
-  left: 32px;
-}
-
-.lds-roller div:nth-child(6) {
-  animation-delay: -0.216s;
-}
-
-.lds-roller div:nth-child(6):after {
-  top: 68px;
-  left: 24px;
-}
-
-.lds-roller div:nth-child(7) {
-  animation-delay: -0.252s;
-}
-
-.lds-roller div:nth-child(7):after {
-  top: 63px;
-  left: 17px;
-}
-
-.lds-roller div:nth-child(8) {
-  animation-delay: -0.288s;
-}
-
-.lds-roller div:nth-child(8):after {
-  top: 56px;
-  left: 12px;
-}
-
-@keyframes lds-roller {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .loader {
   width: 100vw;
   height: 100vh;
@@ -818,8 +708,46 @@ footer li a {
   visibility: hidden;
   animation: fond 3s both;
   background: #f6f6f6;
+  color: #c3c3c3;
+  font-size: 50px;
+  font-family: "shrikhand", sans-serif;
 }
 
+.loader p {
+  background: 50% 100%/50% 50% no-repeat radial-gradient(ellipse at bottom, #EC73DA, #9356DC, #99E2D0, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  font-family: "shrikhand", sans-serif;
+  animation: reveal 3s ease-in-out forwards 200ms;
+}
+@media screen and (min-width: 500px) {
+  .loader p {
+    font-size: 75px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .loader p {
+    font-size: 100px;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    background-size: 100% 100%;
+  }
+  20% {
+    background-size: 160% 160%;
+  }
+  80% {
+    letter-spacing: 8px;
+    background-size: 240% 240%;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
 @keyframes fond {
   0% {
     visibility: visible;
@@ -828,5 +756,25 @@ footer li a {
     visibility: hidden;
   }
 }
+/*.loader::after
+{
+  content:"";
+  background: -webkit-linear-gradient($gradient1, $gradient2, $btnnv);
+  animation: degrade 300ms;
+  -webkit-background-clip: text;
+  background-clip:text;
+}
+
+
+
+
+@keyframes degrade {
+  0% {
+    background-size: 0%;
+  }
+100% {
+    background-size: 100%;
+  }
+}*/
 
 /*# sourceMappingURL=style.css.map */

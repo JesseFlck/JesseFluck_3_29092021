@@ -10,6 +10,18 @@
 
 .fctcardglobal
 {
+    i{
+        font-size: 20px;
+        width: auto;
+        padding-left: 30px;
+        padding-right: 15px;
+        color: #7E7E7E;
+    }
+
+    .fa-store {
+        color: #9356DC;
+    }
+
     @media screen and (min-width: 500px){
         display: flex;
         align-content: space-between;
@@ -60,12 +72,7 @@
         font-size: 15px;
     }
 
-    img{
-        height: 20px;
-        width: auto;
-        padding-left: 30px;
-        padding-right: 15px;
-    }
+    
 }
 
 
