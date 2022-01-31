@@ -61,24 +61,3 @@
     visibility: hidden;
   }
 }
-
-/*.loader::after
-{
-  content:"";
-  background: -webkit-linear-gradient($gradient1, $gradient2, $btnnv);
-  animation: degrade 300ms;
-  -webkit-background-clip: text;
-  background-clip:text;
-}
-
-
-
-
-@keyframes degrade {
-  0% {
-    background-size: 0%;
-  }
-100% {
-    background-size: 100%;
-  }
-}*/
