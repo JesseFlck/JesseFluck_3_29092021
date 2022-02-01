@@ -18,7 +18,7 @@
         flex-direction: column;
     }
 
-    p, h3:first-child
+    p, h4:first-child
     {
         text-overflow: ellipsis;
         overflow: hidden;
@@ -70,7 +70,7 @@
 
 
 
-.cardmenu h3
+.cardmenu h4
 {
     font-size: 17px;
     margin-block-start: 0;
@@ -86,13 +86,13 @@
 }
 
 
-.cardmenu p, h3
+.cardmenu p, h4
 {
     padding-left: 10px;
     padding-right: 20px;
 }
 
-.cardmenu h3:last-child
+.cardmenu h4:last-child
 {
     font-size: 16px;
     padding-bottom: 10px;

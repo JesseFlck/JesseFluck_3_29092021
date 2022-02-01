@@ -8,17 +8,17 @@
   font-family: "Shrikhand";
   src: url("../polices/Shrikhand/Shrikhand-Regular.ttf");
 }
-.h1index {
+.h2index {
   padding-left: 4%;
 }
 
-.h1menu {
+.h2menu {
   font-family: Shrikhand;
   width: 80%;
   font-size: 27px;
 }
 
-.h2menu {
+.h3menu {
   font-weight: normal;
   text-transform: uppercase;
   font-size: 18px;
@@ -28,13 +28,13 @@
   border-bottom: 3px solid #99E2D0;
 }
 @media screen and (min-width: 500px) {
-  .h2menu {
+  .h3menu {
     margin-right: 80%;
     margin-left: 9%;
   }
 }
 @media screen and (min-width: 992px) {
-  .h2menu {
+  .h3menu {
     margin-right: 70%;
   }
 }
@@ -172,7 +172,7 @@ label::before {
 .contenuform {
   padding-top: 30px;
 }
-.contenuform h1 {
+.contenuform h2 {
   width: 80%;
   margin: auto;
   padding-left: 0;
@@ -242,40 +242,42 @@ label::before {
   padding-top: 15px;
   padding-bottom: 10px;
   font-family: "Shrikhand";
-  font-size: 30px;
+  font-size: 15px;
 }
 @media screen and (min-width: 500px) {
   .headeraccueil {
-    font-size: 36px;
+    font-size: 25px;
   }
 }
-.headeraccueil p {
+.headeraccueil h1 {
   text-align: center;
   margin-block-end: 0;
   margin-block-start: 0;
   margin: auto;
+  font-weight: normal;
 }
 
 /* header menus */
 .headermenu {
   padding-top: 15px;
   font-family: "Shrikhand";
-  font-size: 30px;
+  font-size: 15px;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
 }
 @media screen and (min-width: 500px) {
   .headermenu {
-    font-size: 36px;
+    font-size: 25px;
   }
 }
 
-.headermenu p {
+.headermenu h1 {
   text-align: center;
   margin-block-end: 0;
   margin-block-start: 0;
   margin: auto;
+  font-weight: normal;
 }
 
 .headermenu i {
@@ -459,7 +461,7 @@ footer li a {
   margin-top: 0;
   margin-bottom: 6px;
 }
-#restaurants .h2index {
+#restaurants .h3index {
   font-size: 18px;
   padding-left: 3%;
   margin-top: 0;
@@ -551,7 +553,7 @@ footer li a {
     flex-direction: column;
   }
 }
-.cardmenuglobal p, .cardmenuglobal h3:first-child {
+.cardmenuglobal p, .cardmenuglobal h4:first-child {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -595,7 +597,7 @@ footer li a {
   cursor: pointer;
 }
 
-.cardmenu h3 {
+.cardmenu h4 {
   font-size: 17px;
   margin-block-start: 0;
   margin-block-end: 0;
@@ -608,12 +610,12 @@ footer li a {
   padding-top: 10px;
 }
 
-.cardmenu p, h3 {
+.cardmenu p, h4 {
   padding-left: 10px;
   padding-right: 20px;
 }
 
-.cardmenu h3:last-child {
+.cardmenu h4:last-child {
   font-size: 16px;
   padding-bottom: 10px;
 }
